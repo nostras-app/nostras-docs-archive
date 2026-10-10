@@ -20,28 +20,38 @@ AI-assisted features) on top of the open protocol, not instead of it.
 - **Relay choice stays yours.** NOSTRAS defaults to its own relay, but you
   can point it at any relay you trust.
 
-## Status
+## Try it
 
-NOSTRAS is in active development and not yet publicly released. This
-repository will be updated as that changes.
+- App: [app.nostras.app](https://app.nostras.app) (install it as a PWA
+  from your browser)
+- Relay: `wss://nostras.app`
+- Landing page: [nostras.app](https://nostras.app)
 
-## Why isn't the source code here?
+## Source code
 
-This repository is for documentation and support — it does not contain
-NOSTRAS's implementation.
+NOSTRAS is open source. The client, the relay and the DVM live in
+[nostras-app/nostras-app](https://github.com/nostras-app/nostras-app), under the AGPL-3.0, with a commercial
+license available for closed or rebranded builds.
 
-The audit surface for a Nostr client isn't its source, it's its conformance
-to the open protocol itself: every feature NOSTRAS offers is built on
-standard, publicly-specified NIPs, verifiable by observing what it actually
-sends over the wire. Non-custodial key and wallet handling means NOSTRAS is
-never in a position to touch your identity or your funds, regardless of
-what its code looks like.
+You can read the code, but you don't have to trust it. Every feature
+NOSTRAS offers is built on standard, publicly specified NIPs, so you can
+check what it actually sends over the wire with any tool that speaks
+Nostr. And because it never holds your keys or funds, the code is never
+in a position to touch your identity or your money.
+
+AI features (summarize, translate, ask, spam check) are encrypted between
+you and the NOSTRAS DVM, and each model it offers says who can see your
+text. To run them on your own hardware, see
+[docs/local-ai.md](https://github.com/nostras-app/nostras-app/blob/master/docs/local-ai.md).
 
 ## Support
 
-Questions, bugs, and feature requests: please [open an issue](../../issues).
+Questions, bugs and feature requests from users: please
+[open an issue](../../issues) here. Code contributions and code-level
+issues go to the [source repository](https://github.com/nostras-app/nostras-app); see its CONTRIBUTING.md.
 
 ## License
 
-All rights reserved. This repository contains documentation only — no
-license is granted to any NOSTRAS source code, which is not included here.
+The NOSTRAS source code is licensed under the AGPL-3.0, with a commercial
+license available. See [LICENSING.md](https://github.com/nostras-app/nostras-app/blob/master/LICENSING.md) in
+the source repository.
