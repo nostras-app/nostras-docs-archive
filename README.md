@@ -1,5 +1,10 @@
 # NOSTRAS
 
+> **This repository is archived.** NOSTRAS is open source, so docs, questions
+> and bug reports now live next to the code in
+> [nostras-app/nostras](https://github.com/nostras-app/nostras). Please
+> [open issues there](https://github.com/nostras-app/nostras/issues).
+
 A Nostr client, paired with a self-hosted relay, built for people who want
 their identity and their data under their own control — not a platform's.
 
